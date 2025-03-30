@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitap Satışı ve Takip</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://th.bing.com/th/id/OIG3.VHknA88ksCTYbc.vM5vy?w=1024&h=1024&rs=1&pid=ImgDetMain" alt="Kitapçı Logo">
+            <h1>Kitap Satışı ve Takip</h1>
+        </div>
+        <div class="user-links">
+            <a href="login.html" class="btn-login">Giriş Yap</a>
+            <a href="signup.html" class="btn-signup">Kayıt Ol</a>
+            <a href="sepet.html" class="btn-cart">🛒</a>
+        </div>
+    </header>
+    
+    <nav class="navbar">
+        <nav class="navbar">
+            <a href="index.html" class="nav-link">Ana Sayfa</a>
+            <a href="orders.html" class="nav-link">Siparişler</a>
+            <a href="products.html" class="nav-link">Ürünler</a>
+            <a href="contact.html" class="nav-link">İletişim</a>
+            <a href="about.html" class="nav-link">Hakkımızda</a>
+        </nav>
+    </nav>
+    
+    <div class="search-box-container">
+        <input type="text" placeholder="Kitapları ara..." id="search-input">
+        <button class="btn-search">🔍</button>
+    </div>
+    
+    <div class="content-area">
+        <h2 class="section-title">Öne Çıkan Kitaplar</h2>
+        <div class="featured-books">
+            <!-- Book cards will go here -->
+            <div class="book-card">
+                <div class="book-image">
+                    <img src="/api/placeholder/200/300" alt="Kitap Kapağı">
+                </div>
+                <div class="book-info">
+                    <h3>Örnek Kitap 1</h3>
+                    <p class="author">Yazar Adı</p>
+                    <p class="price">89.90 ₺</p>
+                    <button class="btn-add-cart">Sepete Ekle</button>
+                </div>
+            </div>
+            <div class="book-card">
+                <div class="book-image">
+                    <img src="/api/placeholder/200/300" alt="Kitap Kapağı">
+                </div>
+                <div class="book-info">
+                    <h3>Örnek Kitap 2</h3>
+                    <p class="author">Yazar Adı</p>
+                    <p class="price">75.50 ₺</p>
+                    <button class="btn-add-cart">Sepete Ekle</button>
+                </div>
+            </div>
+            <div class="book-card">
+                <div class="book-image">
+                    <img src="/api/placeholder/200/300" alt="Kitap Kapağı">
+                </div>
+                <div class="book-info">
+                    <h3>Örnek Kitap 3</h3>
+                    <p class="author">Yazar Adı</p>
+                    <p class="price">125.00 ₺</p>
+                    <button class="btn-add-cart">Sepete Ekle</button>
+                </div>
+            </div>
+            <div class="book-card">
+                <div class="book-image">
+                    <img src="/api/placeholder/200/300" alt="Kitap Kapağı">
+                </div>
+                <div class="book-info">
+                    <h3>Örnek Kitap 4</h3>
+                    <p class="author">Yazar Adı</p>
+                    <p class="price">62.75 ₺</p>
+                    <button class="btn-add-cart">Sepete Ekle</button>
+                </div>
+            </div>
+        </div>
+        
+        <h2 class="section-title">Çok Satanlar</h2>
+        <div class="featured-books">
+            <!-- Bestseller books would go here -->
+            <div class="book-card bestseller">
+                <div class="book-image">
+                    <img src="/api/placeholder/200/300" alt="Kitap Kapağı">
+                    <div class="bestseller-badge">Çok Satan</div>
+                </div>
+                <div class="book-info">
+                    <h3>Çok Satan Kitap 1</h3>
+                    <p class="author">Ünlü Yazar</p>
+                    <p class="price">149.90 ₺</p>
+                    <button class="btn-add-cart">Sepete Ekle</button>
+                </div>
+            </div>
+            <div class="book-card bestseller">
+                <div class="book-image">
+                    <img src="/api/placeholder/200/300" alt="Kitap Kapağı">
+                    <div class="bestseller-badge">Çok Satan</div>
+                </div>
+                <div class="book-info">
+                    <h3>Çok Satan Kitap 2</h3>
+                    <p class="author">Ünlü Yazar</p>
+                    <p class="price">112.50 ₺</p>
+                    <button class="btn-add-cart">Sepete Ekle</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="newsletter">
+        <div class="newsletter-content">
+            <h2>Yeni Çıkan Kitaplardan Haberdar Olun</h2>
+            <p>E-posta adresinizi bırakın, en yeni kitaplar ve özel indirimlerden ilk siz haberdar olun.</p>
+            <div class="newsletter-form">
+                <input type="email" placeholder="E-posta adresiniz" id="email-input">
+                <button class="btn-subscribe">Abone Ol</button>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Kitap Satışı ve Takip</h3>
+                <p>Tüm kitapseverler için en geniş seçenek ve en iyi fiyatlarla hizmetinizdeyiz.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Hızlı Erişim</h3>
+                <ul>
+                    <li><a href="/about">Hakkımızda</a></li>
+                    <li><a href="/contact">İletişim</a></li>
+                    <li><a href="/faq">Sıkça Sorulan Sorular</a></li>
+                    <li><a href="/shipping">Kargo ve Teslimat</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>İletişim</h3>
+                <p>📞 (0212) 123 45 67</p>
+                <p>📧 info@kitapsatisi.com</p>
+                <p>🏠 İstanbul, Türkiye</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Kitap Satışı ve Takip. Tüm Hakları Saklıdır.</p>
+        </div>
+    </footer>
+</body>
+</html>

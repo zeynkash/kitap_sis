@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sepet | Kitap Satışı ve Takip</title>
+    <link rel="stylesheet" href="Kitap_Satisi/public/styles/sepet.css">
+</head>
+<body>
+    <div class="cart-container">
+        <img src="https://th.bing.com/th/id/OIG3.VHknA88ksCTYbc.vM5vy?w=1024&h=1024&rs=1&pid=ImgDetMain" alt="Kitapçı Logo" class="logo">
+        <h2>Sepetiniz</h2>
+
+        <!-- Sepet Ürünleri -->
+        <div class="cart-items">
+            <div class="cart-item">
+                <img src="product-image.jpg" alt="Kitap Görseli" class="cart-item-image">
+                <div class="cart-item-details">
+                    <h3>Kitap Adı</h3>
+                    <p class="cart-item-price">Fiyat: 45 TL</p>
+                    <p class="cart-item-quantity">Adet: 2</p>
+                    <button class="btn-remove" onclick="removeItem()">Kaldır</button>
+                </div>
+            </div>
+
+            <div class="cart-item">
+                <img src="product-image.jpg" alt="Kitap Görseli" class="cart-item-image">
+                <div class="cart-item-details">
+                    <h3>Kitap Adı</h3>
+                    <p class="cart-item-price">Fiyat: 75 TL</p>
+                    <p class="cart-item-quantity">Adet: 1</p>
+                    <button class="btn-remove" onclick="removeItem()">Kaldır</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sepet Toplamı -->
+        <div class="cart-total">
+            <p><strong>Toplam: 165 TL</strong></p>
+            <button type = "button" onclick="window.location.href='/adres'" class="btn-checkout">Satın Al</button>
+        </div>
+
+        <button type="button" class="btn-back" onclick="window.location.href='/'">Ana Sayfaya Dön</button>
+    </div>
+
+    <script>
+        function removeItem() {
+            alert("Ürün sepetten kaldırıldı!");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hakkımızda | Kitap Satışı ve Takip</title>
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+    <div id="header"></div>
+    <script>
+        fetch("layout.html") 
+            .then(response => response.text())
+            .then(data => document.getElementById("header").innerHTML = data);
+    </script>
+
+    <section class="about">
+        <h2>Hakkımızda</h2>
+        <p>Kitap Satışı ve Takip'e hoş geldiniz, kitaplarla ilgili her şey için birinci sınıf kaynağınız. Kullanıcı dostu arayüzler, verimlilik ve doğruluk odaklı, en iyi kitap satış ve takip sistemini sunmaya kararlıyız.</p>
+
+        <p>2025 yılında kurulan platformumuz, başlangıcından bu yana büyük bir yol kat etti. Misyonumuz, işletmeler ve bireyler için kitap yönetimini basitleştirerek sorunsuz işlemler ve kolay takip sağlamaktır.</p>
+
+        <p>Platformumuzu kullanırken bizim kadar keyif almanızı umuyoruz. Herhangi bir sorunuz veya yorumunuz olursa, lütfen bizimle iletişime geçmekten çekinmeyin.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Kitap Satışı ve Takip. Tüm Hakları Saklıdır.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sipariş Detayları</title>
+    <link rel="stylesheet" href="Kitap_Satisi/public/styles/detail.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://th.bing.com/th/id/OIG3.VHknA88ksCTYbc.vM5vy?w=1024&h=1024&rs=1&pid=ImgDetMain" alt="Kitapçı Logo">
+        </div>
+        <h1>Sipariş Detayları</h1>
+        <nav>
+            <a href="/">Ana Sayfa</a>
+            <a href="/orders">Siparişler</a>
+            <a href="/products">Ürünler</a>
+            <a href="/contact">İletişim</a>
+            <a href="/about">Hakkımızda</a>
+        </nav>
+    </header>
+
+    <main>
+        <div id="orderDetails"> 
+            <h2>Sipariş No: #12345</h2>
+            <p><strong>Tarih:</strong> 2 Mart 2025</p>
+            <p><strong>Toplam Tutar:</strong> 320 TL</p>
+            
+            <h3>Sipariş Durumu</h3>
+            <div class="order-status">
+                <div class="status-step completed">
+                    Sipariş Alındı <br>
+                    <span class="status-date">01 Mart 2025</span>
+                </div>
+                <div class="status-step completed">
+                    Sipariş Hazırlanıyor <br>
+                    <span class="status-date">02 Mart 2025</span>
+                </div>
+                <div class="status-step active">
+                    Kargoya Verildi <br>
+                    <span class="status-date">03 Mart 2025</span>
+                </div>
+                <div class="status-step">
+                    Teslim Edildi <br>
+                    <span class="status-date">Tarih Bekleniyor</span>
+                </div>
+            </div>
+
+            <h3>Sipariş Edilen Ürünler</h3>
+            <ul>
+                <li>
+                    <strong>Kitap Adı:</strong> Yapay Zekaya Giriş <br>
+                    <strong>Adet:</strong> 2 <br>
+                    <strong>Fiyat:</strong> 80 TL
+                </li>
+                <li>
+                    <strong>Kitap Adı:</strong> Algoritmalar ve Veri Yapıları <br>
+                    <strong>Adet:</strong> 1 <br>
+                    <strong>Fiyat:</strong> 160 TL
+                </li>
+            </ul>
+
+            <h3>Alıcı Bilgileri</h3>
+            <p><strong>Ad:</strong> Ahmet </p> 
+            <p><strong>Soyadı:</strong> Yılmaz </p>
+            <p><strong>Adres:</strong> İstanbul, Türkiye</p>
+            <p><strong>Telefon:</strong> +90 555 123 4567</p><br>
+            <button type="button" class="btn-back" onclick="window.location.href='/orders'">Geri Dön</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Kitap Satışı ve Takip. Tüm Hakları Saklıdır.</p>
+    </footer>
+</body>
+</html>

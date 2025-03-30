@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adres Giriş Formu</title>
+    <link rel="stylesheet" href="Kitap_Satisi/public/styles/adres.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Adres Bilgileri</h2>
+        <form action="#" method="POST">
+
+            <div class="form-group">
+                <label for="country">Ülke:</label>
+                <select id="country" name="country" required>
+                    <option value="">Ülke seçin</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="city">Şehir:</label>
+                <select id="city" name="city" required>
+                    <option value="">Önce ülke seçin</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="neighborhood">Mahalle:</label>
+                <input type="text" id="neighborhood" name="neighborhood" required placeholder="Mahalle adı girin">
+            </div>
+            
+            <div class="form-group">
+                <label for="street">Sokak / Cadde:</label>
+                <input type="text" id="street" name="street" required placeholder="Açık Adres">
+            </div>
+
+            <div class="form-group">
+                <label for="postal-code">Posta Kodu:</label>
+                <input type="text" id="postal-code" name="postal-code" required placeholder="12345" pattern="\d{5}">
+            </div>
+
+            <button type="button" onclick="window.location.href='/payment'" class="btn-checkin">Kaydet</button>
+            <button type = "button" onclick="window.location.href='/sepet'" class="btn-checkout">Geri Dön</button>
+        </form>
+    </div>
+
+    <script src="Kitap_Satisi/public/JS/adres.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siparişler</title>
+    <link rel="stylesheet" href="Kitap_Satisi/public/styles/orders.css">
+</head>
+<body>
+    <div id="header"></div>
+    <script>
+        fetch("Kitap_Satisi/public/layout.html") 
+            .then(response => response.text())
+            .then(data => document.getElementById("header").innerHTML = data);
+    </script>
+
+    <div class="search-box-container">
+        <input type="text" placeholder="Kitapları ara..." id="search-input">
+        <button class="btn-search">🔍</button>
+    </div>
+
+    <main>
+        <h2>Geçmiş Siparişleriniz</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Sipariş No</th>
+                    <th>Tarih</th>
+                    <th>Ürün</th>
+                    <th>Adet</th>
+                    <th>Fiyat</th>
+                    <th>Durum</th>
+                    <th>Detay</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>#1001</td>
+                    <td>27 Şubat 2025</td>
+                    <td>Yapay Zeka Kitabı</td>
+                    <td>1</td>
+                    <td>150₺</td>
+                    <td class="status received">Sipariş Alındı</td>
+                    <td><a href="/detail" class="btn-primary">Detay</a></td>
+                </tr>
+                <tr>
+                    <td>#1002</td>
+                    <td>25 Şubat 2025</td>
+                    <td>Python Programlama Kitabı</td>
+                    <td>2</td>
+                    <td>300₺</td>
+                    <td class="status preparing">Sipariş Hazırlanıyor</td>
+                    <td><a href="/detail" class="btn-primary">Detay</a></td>
+                </tr>
+                <tr>
+                    <td>#1003</td>
+                    <td>20 Şubat 2025</td>
+                    <td>JavaScript Kitabı</td>
+                    <td>1</td>
+                    <td>120₺</td>
+                    <td class="status shipped">Kargoya Verildi</td>
+                    <td><a href="/detail" class="btn-primary">Detay</a></td>
+                </tr>
+                <tr>
+                    <td>#1004</td>
+                    <td>15 Şubat 2025</td>
+                    <td>CSS Tasarımı Kitabı</td>
+                    <td>1</td>
+                    <td>100₺</td>
+                    <td class="status delivered">Teslim Edildi</td>
+                    <td><a href="/detail" class="btn-primary">Detay</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Kitap Satışı ve Takip. Tüm Hakları Saklıdır.</p>
+    </footer>
+</body>
+</html>

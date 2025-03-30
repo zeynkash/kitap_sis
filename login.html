@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giriş Yap | Kitap Satışı ve Takip</title>
+    <link rel="stylesheet" href="Kitap_Satisi/public/styles/login.css">
+</head>
+<body>
+    <div class="login-container">
+        <img src="https://th.bing.com/th/id/OIG3.VHknA88ksCTYbc.vM5vy?w=1024&h=1024&rs=1&pid=ImgDetMain" alt="Kitapçı Logo" class="logo">
+        <h2>Giriş Yap</h2>
+        <form action="#" method="POST" class="login-form">
+            <div class="form-group">
+                <label for="username">Kullanıcı Adı:</label>
+                <input type="text" id="username" name="username" required placeholder="Kullanıcı adınızı girin">
+            </div>
+            <div class="form-group">
+                <label for="password">Parola:</label>
+                <input type="password" id="password" name="password" required placeholder="Parolanızı girin">
+                <p class="password-link"><a href="#">Şifremi Unuttum </a></p>
+            </div>
+            <button type="submit" class="btn-primary">Giriş Yap</button>
+            <p class="register-link">Hesabınız yok mu? <a href="/signup">Kayıt Olun</a></p>
+        </form>
+        <button type="button" class="btn-back" onclick="window.location.href='/'">Ana Sayfaya Dön</button>
+    </div>
+</body>
+</html>

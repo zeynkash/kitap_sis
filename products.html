@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ürünler | Kitap Satışı ve Takip</title>
+    <link rel="stylesheet" href="Kitap_Satisi/public/styles/products.css">
+</head>
+<body>
+    <div id="header"></div>
+    <script>
+        fetch("Kitap_Satisi/public/layout.html") 
+            .then(response => response.text())
+            .then(data => document.getElementById("header").innerHTML = data);
+    </script>
+    
+    <div class="search-box-container">
+        <input type="text" placeholder="Kitapları ara..." id="search-input">
+        <button class="btn-search">🔍</button>
+    </div>
+
+    <div class="content">
+        <section class="filters">
+            <h2>Filtrele</h2>
+            <div class="filter">
+                <label for="category">Kategori:</label>
+                <select id="category" name="category">
+                    <option value="all">Tümü</option>
+                    <option value="fiction" selected>Kurgu</option> <!-- Seçili olan seçenek -->
+                    <option value="non-fiction">Kurgu Dışı</option>
+                    <option value="children">Çocuk</option>
+                    <option value="fantasy">Fantastik</option>
+                    <option value="science-fiction">Bilim Kurgu</option>
+                    <option value="biography">Biyografi</option>
+                    <option value="history">Tarih</option>
+                </select>
+            </div>
+            <div class="filter">
+                <label for="price-range">Fiyat Aralığı:</label>
+                <select id="price-range" name="price-range">
+                    <option value="all">Tümü</option>
+                    <option value="0-50">0 - 50 TL</option>
+                    <option value="51-100">51 - 100 TL</option>
+                    <option value="101-200">101 - 200 TL</option>
+                    <option value="201-300">201 - 300 TL</option>
+                    <option value="301-500">301 - 500 TL</option>
+                    <option value="500+">500+ TL</option>
+                </select>
+            </div>
+        </section>
+        <section class="product-list">
+            <h2>Kitaplar:</h2>
+
+            <!-- Ürün 1 -->
+            <div class="product-card">
+                <img src="https://via.placeholder.com/150" alt="Yapay Zeka Kitabı">
+                <h3>Yapay Zeka Kitabı</h3>
+                <p class="price">Fiyat: 150 TL</p>
+                <p class="description">Yapay zeka teknolojileri ve uygulamaları hakkında kapsamlı bir rehber.</p>
+                <button class="btn-add-to-cart">Sepete Ekle</button>
+            </div>
+
+            <!-- Ürün 2 -->
+            <div class="product-card">
+                <img src="https://via.placeholder.com/150" alt="Python Programlama Kitabı">
+                <h3>Python Programlama Kitabı</h3>
+                <p class="price">Fiyat: 100 TL</p>
+                <p class="description">Python dilini öğrenmek için başlangıç ve ileri düzey konuları kapsayan bir kaynak.</p>
+                <button class="btn-add-to-cart">Sepete Ekle</button>
+            </div>
+
+            <!-- Ürün 3 -->
+            <div class="product-card">
+                <img src="https://via.placeholder.com/150" alt="CSS Tasarımı Kitabı">
+                <h3>CSS Tasarımı Kitabı</h3>
+                <p class="price">Fiyat: 75 TL</p>
+                <p class="description">Web tasarımında CSS ile stil vermek ve tasarım tekniklerini öğrenin.</p>
+                <button class="btn-add-to-cart">Sepete Ekle</button>
+            </div>
+
+            <!-- Ürün 4 -->
+            <div class="product-card">
+                <img src="https://via.placeholder.com/150" alt="JavaScript Kitabı">
+                <h3>JavaScript Kitabı</h3>
+                <p class="price">Fiyat: 120 TL</p>
+                <p class="description">JavaScript ile etkileşimli web sayfaları oluşturmayı öğrenin.</p>
+                <button class="btn-add-to-cart">Sepete Ekle</button>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Kitap Satışı ve Takip. Tüm Hakları Saklıdır.</p>
+    </footer>
+
+</body>
+</html>
